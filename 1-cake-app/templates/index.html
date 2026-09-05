@@ -1,0 +1,110 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}"/>
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid px-5">
+        <a class="navbar-brand text-danger" href="#">Cakery&Bakery</a>
+        <div class="ms-auto">
+            <a class="nav-link d-inline">Home</a>
+            <a class="nav-link d-inline">About</a>
+            <a class="nav-link d-inline">Add</a>
+            <a class="nav-link d-inline">Pricing</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid bg-danger px-5 py-4">
+    <div class="row align-items-center">
+        <div class="col-6">
+            <h1 class="text-white display-6">Explore the wonderland</h1>
+            <p class="text-white-50">Assignment for HCI Exam</p>
+            <div>
+                <button class="btn bg-white">Get Started</button>
+                <button class="btn border border-white">Learn more</button>
+            </div>
+        </div>
+        <div class="col-5">
+            <img class="w-100 rounded" src="{% static 'cake1.png' %}">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid pt-5 bg-light">
+    <div class="col-5 text-center mx-auto">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Consequatur corporis doloribus facere laudantium provident repudiandae sint temporibus! Assumenda error et, incidunt maxime nobis obcaecati."
+        </p>
+        <div class="">
+            <img width="30" src="{% static 'profile-icon.png' %}">
+            <p>John Doe / CEO, Bakery</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <h3 class="fw-bold text-danger text-center">Products</h3>
+    <p class="text-center">Add more products in the edit form</p>
+    <div class="row">
+{#        {% for cake in cakes %}#}
+            <div class="col-4">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'cake1.png' %}">
+                    <div class="card-body">
+                        <h5>torta</h5>
+                        <p>torta description torta descriptiontorta description torta descriptiontorta descriptiontorta descriptiontorta descriptiontorta description</p>
+                        <div>
+                            <img src="{% static 'profile-icon.png' %}" style="display: inline">
+                            <p style="display: inline" class="fw-bold">Baker Name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="col-4">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'cake2.png' %}">
+                    <div class="card-body">
+                        <h5>torta</h5>
+                        <p>torta description torta descriptiontorta description torta descriptiontorta descriptiontorta descriptiontorta descriptiontorta description</p>
+                        <div>
+                            <img src="{% static 'profile-icon.png' %}" style="display: inline">
+                            <p style="display: inline" class="fw-bold">Baker Name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="col-4">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'cake3.png' %}">
+                    <div class="card-body">
+                        <h5>torta</h5>
+                        <p>torta description torta descriptiontorta description torta descriptiontorta descriptiontorta descriptiontorta descriptiontorta description</p>
+                        <div>
+                            <img src="{% static 'profile-icon.png' %}" style="display: inline">
+                            <p style="display: inline" class="fw-bold">Baker Name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+{#        {% endfor %}#}
+    </div>
+
+</div>
+
+<footer class="container-fluid bg-danger d-flex justify-content-between text-white align-items-center px-5 mt-5">
+    <p>Copyright</p>
+    <p>Privacy Terms Add</p>
+</footer>
+
+
+
+</body>
+</html>
