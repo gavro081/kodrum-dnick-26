@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-success mb-5">
+    <div class="container-fluid">
+        <p class="fw-bold text-white">Hospital Doctors System</p>
+    </div>
+</nav>
+
+<div class="container bg-success text-center py-5">
+    <h1 class="text-white ">Dr Mike Reynolds</h1>
+    <p class="text-white">Specialty: test | Institution: test </p>
+    <p class="text-white">Email: email@email.com | Phone +1-555-123412412</p>
+</div>
+
+<div class="container bg-light">
+    <h3 class="text-center pt-5 mb-5">Appointments Overview</h3>
+    <div class="row d-flex justify-content-center">
+        <div class="col-3">
+            <h4>Past Appointments</h4>
+            <div class="card mb-2">
+                <div class="card-body">
+                    <h5>Cardiology</h5>
+                    <p>Routine check up</p>
+                    <p>Routine check up</p>
+                    <p>Date: 06-09-2026</p>
+                    <p>Patient: Emily Carter</p>
+                </div>
+            </div>
+
+            <div class="card mb-2">
+                <div class="card-body">
+                    <h5>Cardiology</h5>
+                    <p>Routine check up</p>
+                    <p>Routine check up</p>
+                    <p>Date: 06-09-2026</p>
+                    <p>Patient: Emily Carter</p>
+                </div>
+            </div>
+
+            <div class="card mb-2">
+                <div class="card-body">
+                    <h5>Cardiology</h5>
+                    <p>Routine check up</p>
+                    <p>Routine check up</p>
+                    <p>Date: 06-09-2026</p>
+                    <p>Patient: Emily Carter</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3">
+            <h4>Today's Appointments</h4>
+            <div class="card mb-2">
+                <div class="card-body">
+                    <h5>Cardiology</h5>
+                    <p>Routine check up</p>
+                    <p>Routine check up</p>
+                    <p>Date: 06-09-2026</p>
+                    <p>Patient: Emily Carter</p>
+                </div>
+            </div>
+
+            <div class="card mb-2">
+                <div class="card-body">
+                    <h5>Cardiology</h5>
+                    <p>Routine check up</p>
+                    <p>Routine check up</p>
+                    <p>Date: 06-09-2026</p>
+                    <p>Patient: Emily Carter</p>
+                </div>
+            </div>
+
+            <div class="card mb-2">
+                <div class="card-body">
+                    <h5>Cardiology</h5>
+                    <p>Routine check up</p>
+                    <p>Routine check up</p>
+                    <p>Date: 06-09-2026</p>
+                    <p>Patient: Emily Carter</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3">
+            <h4>Future Appointments</h4>
+            <div class="card mb-2">
+                <div class="card-body">
+                    <h5>Cardiology</h5>
+                    <p>Routine check up</p>
+                    <p>Routine check up</p>
+                    <p>Date: 06-09-2026</p>
+                    <p>Patient: Emily Carter</p>
+                </div>
+            </div>
+
+            <div class="card mb-2">
+                <div class="card-body">
+                    <h5>Cardiology</h5>
+                    <p>Routine check up</p>
+                    <p>Routine check up</p>
+                    <p>Date: 06-09-2026</p>
+                    <p>Patient: Emily Carter</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3 class="text-center my-5">Add a new appointment</h3>
+<div class="container bg-light py-5">
+    {{ form.as_p }}
+    <div class="text-center">
+        <button class="bg-success btn text-white">Create Appointment</button>
+    </div>
+</div>
+
+<footer class="bg-dark mt-5">
+    <p class="text-white text-center">Hospital Doctor System</p>
+</footer>
+
+</body>
+</html>
